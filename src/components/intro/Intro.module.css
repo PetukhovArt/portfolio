@@ -1,0 +1,27 @@
+.intro {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.aboutWrapper {
+    width: 60%;
+    height: 60%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutText {
+    text-align: left;
+    font-weight: 700;
+}
+
+.aboutImg {
+    height: 100%;
+    width: 150px;
+    background-color: gray;
+}

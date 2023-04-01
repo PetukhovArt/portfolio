@@ -1,6 +1,15 @@
 .nav {
-    border: 1px solid black;
+    border: 2px solid red;
+    width: 300px;
     display: flex;
     gap: 10px;
-    justify-content: flex-end;
+    justify-content: space-around;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: deepskyblue;
+    color: blue;
+    transition: 0.3s;
 }

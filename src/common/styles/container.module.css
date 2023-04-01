@@ -1,0 +1,12 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    border: 1px solid;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
