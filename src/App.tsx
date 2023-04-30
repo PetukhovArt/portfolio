@@ -1,6 +1,7 @@
 import React from 'react';
 import {Header} from './components/header/Header';
 import {Intro} from './components/intro/Intro';
+import {Skills} from './components/skills/Skills';
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
         <div>
             <Header/>
             <Intro/>
-            {/*<Skills/>*/}
+            <Skills/>
             {/*<Projects/>*/}
             {/*<SearchingFor/>*/}
             {/*<Contacts/>*/}

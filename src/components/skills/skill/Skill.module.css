@@ -1,13 +1,7 @@
 .intro {
-    min-height: 100vh;
     background-color: pink;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.introContainer {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
