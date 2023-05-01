@@ -1,0 +1,18 @@
+.footerBlock {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #323232;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+    gap: 10px;
+}
+.links a img {
+    width: 30px;
+    height: 30px;
+}

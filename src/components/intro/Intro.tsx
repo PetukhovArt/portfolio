@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Intro.module.css'
 import style from '../../common/styles/container.module.css'
-
+import photo from '../../assets/images/photo.jpg'
 
 export const Intro = () => {
     return (
@@ -12,8 +12,8 @@ export const Intro = () => {
                         <h1>I am Artem Petukhov</h1>
                         <h3>Frontend developer!</h3>
                     </div>
-                    <div className={s.introPhoto}><img src="" alt=""/></div>
-                </div>
+                    <div className={s.introPhoto}></div>
+            </div>
         </div>
     );
 }

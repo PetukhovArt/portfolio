@@ -1,0 +1,15 @@
+.searchingBlock {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: darkslateblue;
+}
+.searchingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+h3 {
+    margin: 0;
+}

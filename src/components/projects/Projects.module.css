@@ -1,17 +1,17 @@
-.skillsBlock {
+.projectsBlock {
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: darkcyan;
+    background-color: #b1e7b1;
 }
 
-.skillsContainer {
+.projectsContainer {
     display: flex;
     border: 1px solid black;
     flex-direction: column;
     align-items: center;
 }
 
-.skills {
+.projects {
     width: 100%;
     border: 1px solid black;
     background-color: lightgray;
@@ -21,23 +21,39 @@
     gap: 20px;
 }
 
-.skill {
+.project {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     width: 250px;
-    justify-content: center;
     align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #323232;
 }
 
-.skill img {
+.project img {
     width: 100%;
 }
 
 .title {
     font-size: 30px;
+    color: white;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 .description {
     text-align: center;
+    color: white;
+}
+
+.projectLogo {
+    position: relative;
+}
+
+.projectButton {
+    position: absolute;
+    top: calc((50% - 15px) + 50px);
+    left: calc(50% - 60px);
 }
