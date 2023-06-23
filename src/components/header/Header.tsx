@@ -1,14 +1,15 @@
-import React from 'react';
-import s from './Header.module.css'
-import {Nav} from './nav/Nav';
+import React from "react";
+import style from "./Header.module.scss";
+import Nav from "./Nav/Nav";
+import BurgerNav from "./BurgerNav/BurgerNav";
 
+const Header = () => {
+  return (
+    <div className={`${style.header}`}>
+      <Nav />
+      <BurgerNav />
+    </div>
+  );
+};
 
-export const Header = () => {
-    return (
-        <div className={s.header}>
-            <Nav/>
-        </div>
-    );
-}
-
-
+export default Header;

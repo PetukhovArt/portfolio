@@ -1,34 +1,65 @@
-import React from 'react';
-import s from './Projects.module.css'
-import style from '../../common/styles/container.module.css'
-import {state} from '../../state/state';
-import {Button} from '../button/Button';
+import React from "react";
+import styles from "./Projects.module.scss";
+import styleContainer from "../../common/styles/Container.module.css";
+import Project from "./Project/Project";
+import todolistImg from "../../assets/images/todolistImg.jpg";
+import socialNetworkImg from "../../assets/images/socialnetworkImg.jpg";
+import mapImg from "../../assets/images/map.jpg";
+import Title from "../../common/components/Title";
 
+export type ProjectType = {
+  projectName: string;
+  description: string;
+  img: string;
+  url: string;
+};
 
-export const Projects = () => {
+const Projects = () => {
+  const myProjects: ProjectType[] = [
+    {
+      projectName: "Cards",
+      description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
+      img: "",
+      url: "https://knuckostya.github.io/CardTraining",
+    },
+    {
+      projectName: "Social Network",
+      description: "React, Redux, TypeScript, Material UI, Unit tests",
+      img: socialNetworkImg,
+      url: "https://petukhovart.github.io/samurai-way/",
+    },
+    {
+      projectName: "Todolist",
+      description: "React, Redux, TypeScript, Material UI, Storybook, Unit tests",
+      img: todolistImg,
+      url: "https://antonsadovskiy.github.io/todolist",
+    },
+    {
+      projectName: "Meat Shop",
+      description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
+      img: "",
+      url: "https://petukhovart.github.io/Meat/",
+    },
+  ];
 
+  const projects = myProjects.map((pr, index) => (
+    <Project
+      key={index}
+      projectName={pr.projectName}
+      description={pr.description}
+      img={pr.img}
+      url={pr.url}
+    />
+  ));
 
-    return (
-        <div className={s.projectsBlock}>
-            <div className={`${style.container} ${s.projectsContainer}`}>
-                <h2>Projects</h2>
-                <div className={s.projects}>
-                    {state.projects.map(el =>
-                        <div key={el.id} className={s.project}>
-                            <div className={s.projectLogo}>
-                                <img src={el.logo} alt="logo"/>
-                                <div className={s.projectButton}>
-                                    <Button text={'Click to see'} color={'black'} width={'120px'} height={'30px'}/>
-                                </div>
-                            </div>
-                            <h3 className={s.title}>{el.name}</h3>
-                            <span className={s.description}>{el.description}</span>
-                        </div>
-                    )}
-                </div>
-            </div>
-        </div>
-    );
-}
+  return (
+    <div className={styles.projectsBlock}>
+      <div id={"projects"} className={`${styles.projectsContainer} ${styleContainer.container}`}>
+        <Title title={"My projects"} />
+        <div className={styles.projects}>{projects}</div>
+      </div>
+    </div>
+  );
+};
 
-
+export default Projects;

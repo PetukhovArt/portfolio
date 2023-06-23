@@ -1,0 +1,15 @@
+@import "./src/common/styles/sass/mixins";
+@import "./src/common/styles/sass/variables";
+
+.header {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  height: 60px;
+  background: rgba(2, 3, 18, 1);
+  @include flex(flex-end, center, "", "", "");
+
+  @media screen and (max-width: 530px) {
+    height: 80px;
+  }
+}

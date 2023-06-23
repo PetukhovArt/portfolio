@@ -1,25 +1,22 @@
-import React from 'react';
-import {Header} from './components/header/Header';
-import {Intro} from './components/intro/Intro';
-import {Skills} from './components/skills/Skills';
-import {Projects} from './components/projects/Projects';
-import {SearchingFor} from './components/searchingFor/SearchingFor';
-import {Contacts} from './components/contacts/Contacts';
-import {Footer} from './components/footer/Footer';
-
+import React from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Footer from "./components/Footer/Footer";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
-    return (
-        <>
-            <Header/>
-            <Intro/>
-            <Skills/>
-            <Projects/>
-            <SearchingFor/>
-            <Contacts/>
-            <Footer/>
-        </>
-    );
+  return (
+    <div>
+      <Header />
+      <Main />
+      <Skills />
+      <Projects />
+      <Contacts />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
