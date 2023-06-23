@@ -1,4 +1,7 @@
-@mixin flex($justifyContent, $alignItems, $flexDirection, $flexWrap, $gap) {
+@mixin flex($justifyContent: 'flex-start', $alignItems: 'normal',
+$flexDirection: 'row',
+$flexWrap: 'nowrap',
+$gap) {
   display: flex;
   justify-content: $justifyContent;
   align-items: $alignItems;

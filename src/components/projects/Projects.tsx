@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./Projects.module.scss";
 import styleContainer from "../../common/styles/Container.module.css";
 import Project from "./Project/Project";
-import todolistImg from "../../assets/images/todolistImg.jpg";
-import socialNetworkImg from "../../assets/images/socialnetworkImg.jpg";
-import mapImg from "../../assets/images/map.jpg";
+import todo from "../../assets/images/todo.png";
+import social from "../../assets/images/social.jpg";
+import meat from "../../assets/images/meat.png";
+import cards from "../../assets/images/cards.png";
 import Title from "../../common/components/Title";
 
 export type ProjectType = {
@@ -17,27 +18,27 @@ export type ProjectType = {
 const Projects = () => {
   const myProjects: ProjectType[] = [
     {
-      projectName: "Cards",
+      projectName: "Learning Cards",
       description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
-      img: "",
+      img: cards,
       url: "https://knuckostya.github.io/CardTraining",
     },
     {
       projectName: "Social Network",
       description: "React, Redux, TypeScript, Material UI, Unit tests",
-      img: socialNetworkImg,
+      img: social,
       url: "https://petukhovart.github.io/samurai-way/",
     },
     {
       projectName: "Todolist",
       description: "React, Redux, TypeScript, Material UI, Storybook, Unit tests",
-      img: todolistImg,
-      url: "https://antonsadovskiy.github.io/todolist",
+      img: todo,
+      url: "https://petukhovart.github.io/todolist_main/",
     },
     {
       projectName: "Meat Shop",
       description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
-      img: "",
+      img: meat,
       url: "https://petukhovart.github.io/Meat/",
     },
   ];
