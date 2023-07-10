@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Main.module.scss";
 import styleContainer from "../../common/styles/Container.module.css";
 import me from "../../assets/images/me.jpg";
+import me2 from "../../assets/images/me2.png";
 import ReactTypingEffect from "react-typing-effect";
 
 const Main = () => {
@@ -19,7 +20,7 @@ const Main = () => {
         </div>
         <div className={styles.photoBlock}>
           <div className={styles.photo}>
-            <img src={me} alt="" />
+            <img src={me2} alt="" />
           </div>
         </div>
       </div>

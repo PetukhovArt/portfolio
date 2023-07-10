@@ -10,36 +10,44 @@ import Title from "../../common/components/Title";
 
 export type ProjectType = {
   projectName: string;
+  subtitle?: string
+  disabled?: boolean
   description: string;
   img: string;
-  url: string;
+  url?: string;
 };
 
 const Projects = () => {
   const myProjects: ProjectType[] = [
     {
-      projectName: "Learning Cards",
-      description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
+      projectName: "Learning Cards (+ comp. library)",
+      subtitle: 'Main page coming soon',
+      description: "React, Storybook, Redux Toolkit, RTK Query, TypeScript, Radix UI",
       img: cards,
-      url: "https://knuckostya.github.io/CardTraining",
+      url: "https://storybook-cards-training.vercel.app",
     },
     {
       projectName: "Social Network",
+      subtitle: 'Design coming soon',
       description: "React, Redux, TypeScript, Material UI, Unit tests",
       img: social,
-      url: "https://petukhovart.github.io/samurai-way/",
+      disabled: true,
+      // url: "https://petukhovart.github.io/samurai-way/",
     },
     {
       projectName: "Todolist",
+      subtitle: 'Design and updates coming soon',
       description: "React, Redux, TypeScript, Material UI, Storybook, Unit tests",
       img: todo,
       url: "https://petukhovart.github.io/todolist_main/",
     },
     {
       projectName: "Meat Shop",
+      subtitle: 'Commercial project, In progress',
       description: "React, Redux Toolkit, RTK Query, TypeScript, Material UI, Unit tests",
       img: meat,
-      url: "https://petukhovart.github.io/Meat/",
+      disabled: true,
+      // url: "https://petukhovart.github.io/Meat/",
     },
   ];
 
@@ -47,9 +55,11 @@ const Projects = () => {
     <Project
       key={index}
       projectName={pr.projectName}
+      subtitle={pr.subtitle}
       description={pr.description}
       img={pr.img}
       url={pr.url}
+      disabled={pr.disabled}
     />
   ));
 
